@@ -1,4 +1,5 @@
 bat
+bitwarden-cli
 bottom
 cocoapods
 eza
@@ -8,6 +9,7 @@ gh
 lazygit
 navi
 neovim
+pipx
 ripgrep
 stow
 tmux
