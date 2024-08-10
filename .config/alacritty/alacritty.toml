@@ -120,9 +120,9 @@ args = ["-l", "-c", "tmux attach || tmux"]
 program = "/bin/zsh"
 
 [window]
+opacity = 0.99
 decorations = "buttonless"
 dynamic_padding = true
-opacity = 1.0
 startup_mode = "Maximized"
 
 [window.dimensions]

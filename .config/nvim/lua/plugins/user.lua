@@ -129,7 +129,6 @@ return {
             })
         end
     },
-    -- copilot cmp
     {
         "zbirenbaum/copilot-cmp",
         config = function()
@@ -145,6 +144,12 @@ return {
     {
         "Shatur/neovim-ayu"
     },
+-- {
+--       "supermaven-inc/supermaven-nvim",
+--       config = function()
+--         require("supermaven-nvim").setup({})
+--       end,
+--     },
     { "catppuccin/nvim",      name = "catppuccin",
 config = function()
             

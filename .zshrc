@@ -120,6 +120,8 @@ alias q=exit
 alias sd="cd ~ && cd \$(fd --type d --max-depth 2 | fzf)"
 alias std="cd \$(fd --type d --max-depth 2 | fzf)"
 alias javaver="/usr/libexec/java_home -V"
+alias reload="source ~/.zshrc"
+alias repetition="defaults write -g ApplePressAndHoldEnabled -bool false"
 # export JAVA_HOME=$(/usr/libexec/java_home -v 17) <- use this to change the version of java
 alias cat="bat"
 alias ls="eza"
@@ -147,6 +149,8 @@ export FZF_DEFAULT_COMMAND='rg --files'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 export ANDROID_HOME="/Users/yemirhan/Library/Android/sdk"
+export ANDROID_NDK="/Users/yemirhan/Library/Android/sdk/ndk/27.0.11718014/"
+
 
 # pnpm
 export PNPM_HOME="/Users/yemirhan/Library/pnpm"
@@ -245,3 +249,15 @@ source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 export PATH="$HOME/.fastlane/bin:$PATH"
+
+
+function tmux-resurrect-reset-last() {
+    cd ~/.tmux/resurrect && \
+        ln -f -s $(/bin/ls -t tmux_resurrect_*.txt | head -n 1) last && \
+        /bin/ls -l last
+}
+
+export BW_SESSION="24Bw/a+1DM9SI0lb5n3GFGJTUqAGTd1sN9Bb0BO1dP5kBPmDVlXbLIu1B54Y/nuRxnys9exvd+mey5Khw7kAtw=="
+
+# Created by `pipx` on 2024-08-09 20:57:39
+export PATH="$PATH:/Users/yemirhan/.local/bin"
