@@ -10,6 +10,8 @@ fi
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+eval "$(zoxide init zsh)"
+source <(fzf --zsh)
 # source ~/.zshplugs/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -116,6 +118,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 alias q=exit
+alias run:android="npx expo run:android --device"
+alias run:ios="npx expo run:ios --device"
 # alias gf=cd $(find . -type d -print | fzf)
 alias sd="cd ~ && cd \$(fd --type d --max-depth 2 | fzf)"
 alias std="cd \$(fd --type d --max-depth 2 | fzf)"
@@ -141,6 +145,7 @@ alias ..2="cd ../.."
 alias ..3="cd ../../.."
 alias ..4="cd ../../../.."
 alias ..5="cd ../../../../.."
+alias cd="z"
 
 # export GOPATH=$HOME/gocode
 # export PATH=$PATH:$GOPATH/bin
@@ -261,3 +266,27 @@ export BW_SESSION="24Bw/a+1DM9SI0lb5n3GFGJTUqAGTd1sN9Bb0BO1dP5kBPmDVlXbLIu1B54Y/
 
 # Created by `pipx` on 2024-08-09 20:57:39
 export PATH="$PATH:/Users/yemirhan/.local/bin"
+
+
+# Added by Windsurf
+export PATH="/Users/yemirhan/.codeium/windsurf/bin:$PATH"
+export PATH="$(dirname $(which node)):$PATH"
+export PYENV_ROOT="$HOME/.pyenv"
+
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - zsh)"
+export PYENV_ROOT="$HOME/.pyenv"
+
+
+source $(brew --prefix)/Cellar/fzf/$(fzf --version | cut -d ' ' -f 1)/shell/key-bindings.zsh
+
+source $(brew --prefix)/Cellar/fzf/$(fzf --version | cut -d ' ' -f 1)/shell/completion.zsh
+
+source <(switcher init zsh)
+export KUBECONFIG=~/.kube/config
+
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/yemirhan/.lmstudio/bin"
+
+alias claude="/Users/yemirhan/.claude/local/claude"

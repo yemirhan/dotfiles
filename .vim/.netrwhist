@@ -1,4 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =2
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/Users/yemirhan/Developer/react-native-monorepo/apps/faceai'
+let g:netrw_dirhist_3='/Users/yemirhan/Music'
 let g:netrw_dirhist_2='/Users/yemirhan/Developer/faceai-react'
 let g:netrw_dirhist_1='/Users/yemirhan/.tmux.conf'

@@ -1,0 +1,8 @@
+font-family = JetBrainsMono Nerd Font Mono
+font-style = Regular
+font-size = 16
+font-thicken = true
+
+shell-integration = zsh
+
+theme = Rose Pine Moon

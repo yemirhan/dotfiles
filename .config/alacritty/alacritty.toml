@@ -80,7 +80,7 @@ text = "#303446"
 TERM = "xterm-256color"
 
 [font]
-size = 21.0
+size = 18.0
 
 [font.bold]
 family = "JetBrainsMono Nerd Font Mono"
